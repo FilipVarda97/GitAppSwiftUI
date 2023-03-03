@@ -11,6 +11,14 @@
 		7D0A9CC229B2A127000487B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CC129B2A127000487B2 /* ContentView.swift */; };
 		7D0A9CC429B2A128000487B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A9CC329B2A128000487B2 /* Assets.xcassets */; };
 		7D0A9CC729B2A128000487B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D0A9CC629B2A128000487B2 /* Preview Assets.xcassets */; };
+		7D0A9CD529B2A1B6000487B2 /* GAEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CD229B2A1B6000487B2 /* GAEndpoint.swift */; };
+		7D0A9CD629B2A1B6000487B2 /* GARequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CD329B2A1B6000487B2 /* GARequest.swift */; };
+		7D0A9CD729B2A1B6000487B2 /* GAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CD429B2A1B6000487B2 /* GAService.swift */; };
+		7D0A9CDA29B2A255000487B2 /* GARepositoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CD929B2A255000487B2 /* GARepositoriesResponse.swift */; };
+		7D0A9CDE29B2A25E000487B2 /* GARepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CDB29B2A25D000487B2 /* GARepository.swift */; };
+		7D0A9CDF29B2A25E000487B2 /* GAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CDC29B2A25D000487B2 /* GAUser.swift */; };
+		7D0A9CE029B2A25E000487B2 /* GAOwnerUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CDD29B2A25E000487B2 /* GAOwnerUser.swift */; };
+		7D0A9CE229B2A2BE000487B2 /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A9CE129B2A2BE000487B2 /* RepositoryListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		7D0A9CC129B2A127000487B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D0A9CC329B2A128000487B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D0A9CC629B2A128000487B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D0A9CD229B2A1B6000487B2 /* GAEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAEndpoint.swift; sourceTree = "<group>"; };
+		7D0A9CD329B2A1B6000487B2 /* GARequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GARequest.swift; sourceTree = "<group>"; };
+		7D0A9CD429B2A1B6000487B2 /* GAService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAService.swift; sourceTree = "<group>"; };
+		7D0A9CD929B2A255000487B2 /* GARepositoriesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GARepositoriesResponse.swift; sourceTree = "<group>"; };
+		7D0A9CDB29B2A25D000487B2 /* GARepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GARepository.swift; sourceTree = "<group>"; };
+		7D0A9CDC29B2A25D000487B2 /* GAUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAUser.swift; sourceTree = "<group>"; };
+		7D0A9CDD29B2A25E000487B2 /* GAOwnerUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAOwnerUser.swift; sourceTree = "<group>"; };
+		7D0A9CE129B2A2BE000487B2 /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +67,11 @@
 		7D0A9CBE29B2A127000487B2 /* GitAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				7D0A9CBF29B2A127000487B2 /* GitAppSwiftUIApp.swift */,
-				7D0A9CC129B2A127000487B2 /* ContentView.swift */,
-				7D0A9CC329B2A128000487B2 /* Assets.xcassets */,
+				7D0A9CD129B2A16D000487B2 /* APIClient */,
+				7D0A9CCF29B2A15A000487B2 /* Models */,
+				7D0A9CCD29B2A13D000487B2 /* Views */,
+				7D0A9CD029B2A15F000487B2 /* ViewModels */,
+				7D0A9CCE29B2A14E000487B2 /* Resources */,
 				7D0A9CC529B2A128000487B2 /* Preview Content */,
 			);
 			path = GitAppSwiftUI;
@@ -65,6 +83,60 @@
 				7D0A9CC629B2A128000487B2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D0A9CCD29B2A13D000487B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A9CC129B2A127000487B2 /* ContentView.swift */,
+				7D0A9CE129B2A2BE000487B2 /* RepositoryListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7D0A9CCE29B2A14E000487B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A9CBF29B2A127000487B2 /* GitAppSwiftUIApp.swift */,
+				7D0A9CC329B2A128000487B2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7D0A9CCF29B2A15A000487B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A9CDD29B2A25E000487B2 /* GAOwnerUser.swift */,
+				7D0A9CDB29B2A25D000487B2 /* GARepository.swift */,
+				7D0A9CDC29B2A25D000487B2 /* GAUser.swift */,
+				7D0A9CD829B2A24B000487B2 /* Responses */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7D0A9CD029B2A15F000487B2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7D0A9CD129B2A16D000487B2 /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A9CD229B2A1B6000487B2 /* GAEndpoint.swift */,
+				7D0A9CD329B2A1B6000487B2 /* GARequest.swift */,
+				7D0A9CD429B2A1B6000487B2 /* GAService.swift */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		7D0A9CD829B2A24B000487B2 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A9CD929B2A255000487B2 /* GARepositoriesResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +209,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D0A9CD629B2A1B6000487B2 /* GARequest.swift in Sources */,
 				7D0A9CC229B2A127000487B2 /* ContentView.swift in Sources */,
+				7D0A9CE229B2A2BE000487B2 /* RepositoryListView.swift in Sources */,
+				7D0A9CE029B2A25E000487B2 /* GAOwnerUser.swift in Sources */,
+				7D0A9CD529B2A1B6000487B2 /* GAEndpoint.swift in Sources */,
+				7D0A9CDA29B2A255000487B2 /* GARepositoriesResponse.swift in Sources */,
+				7D0A9CD729B2A1B6000487B2 /* GAService.swift in Sources */,
+				7D0A9CDE29B2A25E000487B2 /* GARepository.swift in Sources */,
 				7D0A9CC029B2A127000487B2 /* GitAppSwiftUIApp.swift in Sources */,
+				7D0A9CDF29B2A25E000487B2 /* GAUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
